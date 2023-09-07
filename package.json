@@ -1,0 +1,43 @@
+{
+  "name": "ssr-error",
+  "version": "0.0.0",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve --port=4202",
+    "build": "ng build",
+    "watch": "ng build --watch --configuration development",
+    "test": "ng test",
+    "dev:ssr": "ng run ssr-error:serve-ssr --port=4202",
+    "serve:ssr": "node dist/ssr-error/server/main.js",
+    "build:ssr": "ng build && ng run ssr-error:server",
+    "prerender": "ng run ssr-error:prerender"
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/animations": "^16.2.0",
+    "@angular/cdk": "^16.2.1",
+    "@angular/common": "^16.2.0",
+    "@angular/compiler": "^16.2.0",
+    "@angular/core": "^16.2.0",
+    "@angular/forms": "^16.2.4",
+    "@angular/material": "^16.2.2",
+    "@angular/platform-browser": "^16.2.0",
+    "@angular/platform-browser-dynamic": "^16.2.4",
+    "@angular/platform-server": "^16.2.4",
+    "@angular/router": "^16.2.4",
+    "@nguniversal/express-engine": "^16.2.0",
+    "express": "^4.18.2",
+    "rxjs": "~7.8.0",
+    "tslib": "^2.6.2",
+    "zone.js": "^0.13.1"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "^16.2.1",
+    "@angular/cli": "~16.2.0",
+    "@angular/compiler-cli": "^16.2.4",
+    "@nguniversal/builders": "^16.2.0",
+    "@types/express": "^4.17.17",
+    "@types/node": "^20.5.9",
+    "typescript": "~5.1.6"
+  }
+}
